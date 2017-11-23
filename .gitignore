@@ -107,6 +107,6 @@ venv.bak/
 
 *.jpg
 *.png
-.DS_Store
+*.json
 
-output/
+.DS_Store
