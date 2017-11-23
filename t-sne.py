@@ -55,7 +55,6 @@ tsne = TSNE(
     verbose=2
 ).fit_transform(preprocess_images_as_vecs)
 
-# NOTE: OrderedDict でハッシュを作らないのと順番が保持されない
 param = cl.OrderedDict()
 for (x, y, path) in zip(tsne[:,0], tsne[:,1], paths):
     asin = re.match('^(.*)_1.jpg', os.path.basename(path))[1]
